@@ -13,7 +13,7 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/trafficmanager/armtrafficmanager"
 	"github.com/go-logr/logr"
 	multierr "github.com/hashicorp/go-multierror"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/utils/ptr"

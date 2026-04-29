@@ -21,7 +21,7 @@ env:
 jobs:
   build:
     name: Build and Push image
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     outputs:
       build-image: ${{ env.IMG_REGISTRY_HOST }}/${{ env.IMG_REGISTRY_ORG }}/${{ steps.build-image.outputs.image }}:${{ env.IMG_REF }}
       build-tags: ${{ steps.build-image.outputs.tags  }}
@@ -79,7 +79,7 @@ jobs:
   build-bundle:
     name: Build and Push bundle image
     needs: [build]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     outputs:
       bundle-image: ${{ env.IMG_REGISTRY_HOST }}/${{ env.IMG_REGISTRY_ORG }}/${{ steps.build-image.outputs.image }}:${{ env.IMG_REF }}
 
@@ -128,7 +128,7 @@ jobs:
   build-catalog:
     name: Build and Push catalog image
     needs: [build, build-bundle]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out code
         uses: actions/checkout@v4

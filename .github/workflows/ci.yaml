@@ -33,7 +33,7 @@ jobs:
         with:
           go-version: v1.21.x
           cache: false
-      - uses: golangci/golangci-lint-action@v3
+      - uses: golangci/golangci-lint-action@v9
         with:
           version: v1.55.2
           only-new-issues: true

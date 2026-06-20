@@ -27,7 +27,7 @@ jobs:
       build-tags: ${{ steps.build-image.outputs.tags  }}
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Add latest tag
         if: ${{ github.ref_name == env.MAIN_BRANCH_NAME }}
@@ -85,7 +85,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Run make bundle
         run: make bundle IMG=${{ needs.build.outputs.build-image }}
@@ -131,7 +131,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Run make catalog-build
         run: make catalog-build BUNDLE_IMG=${{ needs.build-bundle.outputs.bundle-image }}

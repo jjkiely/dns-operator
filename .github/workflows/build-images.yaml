@@ -47,7 +47,7 @@ jobs:
 
       - name: Build Image
         id: build-image
-        uses: redhat-actions/buildah-build@v2
+        uses: redhat-actions/buildah-build@v3
         with:
           image: ${{ env.OPERATOR_NAME }}
           tags: ${{ env.IMG_TAGS }}
@@ -97,7 +97,7 @@ jobs:
 
       - name: Build Image
         id: build-image
-        uses: redhat-actions/buildah-build@v2
+        uses: redhat-actions/buildah-build@v3
         with:
           image: ${{ env.OPERATOR_NAME }}-bundle
           tags: ${{ needs.build.outputs.build-tags }}
@@ -143,7 +143,7 @@ jobs:
 
       - name: Build Image
         id: build-image
-        uses: redhat-actions/buildah-build@v2
+        uses: redhat-actions/buildah-build@v3
         with:
           image: ${{ env.OPERATOR_NAME }}-catalog
           tags: ${{ needs.build.outputs.build-tags }}

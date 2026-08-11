@@ -65,7 +65,7 @@ jobs:
       - name: Push Image
         if: github.repository_owner == 'kuadrant'
         id: push-to-quay
-        uses: redhat-actions/push-to-registry@v2
+        uses: redhat-actions/push-to-registry@v3
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}
@@ -114,7 +114,7 @@ jobs:
       - name: Push Image
         if: github.repository_owner == 'kuadrant'
         id: push-to-quay
-        uses: redhat-actions/push-to-registry@v2
+        uses: redhat-actions/push-to-registry@v3
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}
@@ -158,7 +158,7 @@ jobs:
       - name: Push Image
         if: github.repository_owner == 'kuadrant'
         id: push-to-quay
-        uses: redhat-actions/push-to-registry@v2
+        uses: redhat-actions/push-to-registry@v3
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}

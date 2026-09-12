@@ -1,8 +1,6 @@
 module github.com/kuadrant/dns-operator
 
-go 1.22.0
-
-toolchain go1.22.6
+go 1.23
 
 require (
 	cloud.google.com/go/compute/metadata v0.2.3
@@ -106,7 +104,7 @@ require (
 	k8s.io/apiextensions-apiserver v0.30.0 // indirect
 	k8s.io/klog/v2 v2.120.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20240423202451-8948a665c108 // indirect
-	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
+	sigs.k8s.io/json v0.0.0-20260909141634-11ed52e25bc5 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )

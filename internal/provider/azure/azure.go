@@ -10,7 +10,7 @@ import (
 	"sync"
 
 	dns "github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dns/armdns"
-	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/trafficmanager/armtrafficmanager"
+	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/trafficmanager/armtrafficmanager/v2"
 	"github.com/go-logr/logr"
 	multierr "github.com/hashicorp/go-multierror"
 	"gopkg.in/yaml.v2"

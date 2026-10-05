@@ -37,7 +37,7 @@ require (
 )
 
 require (
-	cloud.google.com/go/compute v1.24.0 // indirect
+	cloud.google.com/go/compute v1.71.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.8.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.2.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
